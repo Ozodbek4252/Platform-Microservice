@@ -77,3 +77,5 @@ D:\Ozodbek\Projects\Microservice\Les_Jackson\PlatformService\obj\Debug\net7.0\re
 D:\Ozodbek\Projects\Microservice\Les_Jackson\PlatformService\obj\Debug\net7.0\PlatformService.pdb
 D:\Ozodbek\Projects\Microservice\Les_Jackson\PlatformService\obj\Debug\net7.0\PlatformService.genruntimeconfig.cache
 D:\Ozodbek\Projects\Microservice\Les_Jackson\PlatformService\obj\Debug\net7.0\ref\PlatformService.dll
+D:\Ozodbek\Projects\Microservice\Les_Jackson\PlatformService\bin\Debug\net7.0\Npgsql.dll
+D:\Ozodbek\Projects\Microservice\Les_Jackson\PlatformService\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
