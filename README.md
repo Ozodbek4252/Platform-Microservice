@@ -12,3 +12,9 @@
 
 7. Create "Models" folder in root folder.
 8. Inside Models folder, create Platform.cs model
+
+
+After creating Dockerfile, run the following command:
+9. docker build -t ozodbek4242/platformservice . 
+// don't forget . (dot) at the endo of the command 
+
