@@ -22,6 +22,23 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+using (var scope = app.Services.CreateScope())
+{
+    var serviceProvider = scope.ServiceProvider;
+    try
+    {
+        var context = serviceProvider.GetRequiredService<AppDbContext>();
+        context.Database.EnsureCreated();
+        PrepDb.Seed(app);
+
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("An error occurred while seeding the database.");
+        Console.WriteLine(ex.Message);
+    }
+}
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
