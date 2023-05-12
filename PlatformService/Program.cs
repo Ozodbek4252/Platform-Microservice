@@ -4,8 +4,9 @@ using PlatformService.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseInMemoryDatabase("InMem"));
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(
+    options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 builder.Services.AddControllers();
